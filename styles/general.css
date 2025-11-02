@@ -1,0 +1,54 @@
+p{
+                font-family: arial
+            }
+ body {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 80px;
+ }       
+
+
+
+
+ .theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Dark mode theme */
+.dark-mode {
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+}
+
+.dark-mode .header {
+  background-color: #1f1f1f;
+  border-bottom-color: #333;
+}
+
+.dark-mode .sidebar {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .sidebar-link:hover {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .videogrid {
+  background-color: #0f0f0f;
+}
+
+.dark-mode .title {
+  color: #fff;
+}
+
+.dark-mode .videoauthor, 
+.dark-mode .videostats {
+  color: #aaa;
+}

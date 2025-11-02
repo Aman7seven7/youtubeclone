@@ -1,0 +1,126 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 90px;
+    z-index: 200;
+    padding-top: 5px;
+    
+}
+.sidebar-link {
+    background-color: white;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.sidebar-link:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+    justify-content: center;
+
+    
+}
+.sidbar-link div {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px;
+
+
+}
+.youtubemusic {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+  background-color: white;
+  width: 90px;
+  z-index: 200;
+  padding-top: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar-link {
+  background-color: white;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+  justify-content: center;
+  transition: filter 0.3s ease;
+}
+
+.sidbar-link div {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 5px;
+}
+
+.youtubemusic {
+  margin-left: 20px;
+}
+
+/* ------------------ 🌙 DARK MODE ------------------ */
+.dark-mode .sidebar {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .sidebar-link {
+  background-color: transparent;
+  color: #e0e0e0;
+}
+
+.dark-mode .sidebar-link div {
+  color: #e0e0e0;
+}
+
+.dark-mode .sidebar-link img {
+  filter: brightness(0) invert(0.9); /* visible gray icons */
+}
+
+.dark-mode .sidebar-link:hover {
+  background-color: #2a2a2a;
+}
+
+.dark-mode .sidebar-link:hover img {
+  filter: brightness(0) invert(1); /* brighter icons on hover */
+}
+
+/* Hide sidebar when toggled */
+.sidebar-hidden {
+  transform: translateX(-100%);
+}
